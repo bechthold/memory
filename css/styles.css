@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --blue-200: hsla(194, 74%, 62%, 0.18);
+    --blue-800: hsl(224, 46%, 9%);
+    --violet-500: hsl(226, 31%, 42%);
+    --blue-400: hsla(194, 74%, 62%, 0.18);
+
+    /* typography */
+    --family: 'Rubik', sans-serif;
+    --fs-base: 22px;
+    --weight-light: 300;
+    --weight-normal: 400;
+    --weight-bold: 500;
+
+    /* borders */
+    --radii: 1rem;
+    --radii-full: 50%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--blue-800);
+
+    font-family: var(--family);
+    font-size: var(--fs-base);
+    color: white;
+}
+
+/*------------------------------------------*/
+
+/*shadow for all buttons*/
+button {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game {
+    width: 1200px;
+    height: 720px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+
+    background-color: var(--violet-500);
+
+    padding: 10px;
+    border: 2px solid;
+}
+
+.game__content {
+    display: none;
+    flex-wrap: wrap;
+    perspective: 1000px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.game__card {
+    margin: 5px;
+    position: relative;
+
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .3s;
+
+    border: 1px solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game__card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.game__card.flip {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    backface-visibility: hidden;
+
+    background-color: var(--blue-400);
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.finish-message {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.congratulations {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    opacity: 0;
+    font-size: 0;
+    transition: opacity 0.5s ease-out, font-size 2s ease-out;
+}
+
+.congratulations.active {
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.try-again-button {
+    position: relative;
+    top: 87.5%;
+    left: calc(50% - 12px);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    width: 61%;
+    height: 64px;
+    margin-right: 24px;
+    font: var(--fs-base);
+    align-items: center;
+
+    transition: opacity 1s ease-out;
+}
+
+.try-again-button.active {
+    opacity: 1;
+}
+
+/*------------------------------------------*/
+/*presets*/
+.preset__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 32px;
+}
+
+.preset__header {
+    display: flex;
+    justify-content: center;
+    height: 16%;
+    font-size: 4rem;
+}
+
+.level {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.easy-level,
+.medium-level,
+.hard-level {
+    display: flex;
+    justify-content: center;
+
+    height: 64px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.level__header {
+    width: 25%;
+}
+
+.level__button {
+    width: 200px;
+    height: 100%;
+    margin-right: 24px;
+    font: var(--fs-base);
+}
+
+.card-set {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.child-card-set,
+.adult-card-set {
+    display: flex;
+    justify-content: center;
+
+    height: 64px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.card-set__header {
+    width: 25%;
+}
+
+.game__start {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+}
+
+.card-set__button {
+    width: 200px;
+    height: 100%;
+    margin-right: 24px;
+    font: var(--fs-base);
+}
+
+/*------------------------------------------*/
+
+.game__start button {
+    width: 63%;
+    height: 100%;
+    margin-right: 24px;
+    font: var(--fs-base);
+}
+
+.selected-level,
+.selected-card-set {
+    background-color: var(--blue-200);
+}
+
+/*------------------------------------------*/
+/*indices*/
+.rates {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#timer,
+#move,
+#best-time {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#timer {
+    order: 2;
+}
+
+#move {
+    order: 1;
+}
+
+#best-time {
+    order: 3;
+}
+
+

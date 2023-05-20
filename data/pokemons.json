@@ -1,0 +1,94 @@
+[
+  {
+    "frontImage": "images/pokemons/144Articuno.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText1"
+  },
+  {
+    "frontImage": "images/pokemons/146AMoltres.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText2"
+  },
+  {
+    "frontImage": "images/pokemons/146Moltres.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText3"
+  },
+  {
+    "frontImage": "images/pokemons/150Mewtwo.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText4"
+  },
+  {
+    "frontImage": "images/pokemons/245Suicune.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText5"
+  },
+  {
+    "frontImage": "images/pokemons/249Lugia.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText6"
+  },
+
+  {
+    "frontImage": "images/pokemons/250Ho-Oh.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText1"
+  },
+  {
+    "frontImage": "images/pokemons/380Latias.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText2"
+  },
+  {
+    "frontImage": "images/pokemons/382PKyogre.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText3"
+  },
+  {
+    "frontImage": "images/pokemons/383PGroudon.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText4"
+  },
+  {
+    "frontImage": "images/pokemons/384MRayquaza.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText5"
+  },
+  {
+    "frontImage": "images/pokemons/384Rayquaza.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText6"
+  },
+
+  {
+    "frontImage": "images/pokemons/480Uxie.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText1"
+  },
+  {
+    "frontImage": "images/pokemons/483Dialga.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText2"
+  },
+  {
+    "frontImage": "images/pokemons/382PKyogre.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText3"
+  },
+  {
+    "frontImage": "images/pokemons/485Heatran.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText4"
+  },
+  {
+    "frontImage": "images/pokemons/647AKeldeo.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText5"
+  },
+  {
+    "frontImage": "images/pokemons/888AZacian.png",
+    "backImage": "images/pokemons/back.svg",
+    "text": "CardText6"
+  }
+]
